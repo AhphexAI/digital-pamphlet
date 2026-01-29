@@ -3,7 +3,7 @@
 
 body { font-family: "Pretendard", sans-serif; margin: 0; background: #fff; line-height: 1.6; }
 
-.hero { background: #000; color: #fff; padding: 80px 20px; text-align: center; }
+.hero { background: #0f253a; color: #fff; padding: 80px 20px; text-align: center; }
 .hero h1 { font-size: 1.8rem; letter-spacing: 1px; }
 
 .container { max-width: 500px; margin: 0 auto; padding: 20px; }
@@ -20,6 +20,6 @@ body { font-family: "Pretendard", sans-serif; margin: 0; background: #fff; line-
 .link-btn { flex: 1; text-align: center; padding: 12px; border-radius: 8px; text-decoration: none; font-size: 0.85rem; font-weight: 600; }
 .naver { background: #03C75A; color: white; }
 .kakao { background: #FEE500; color: #3C1E1E; }
-.goods { background: #000; color: white; display: block; margin-top: 10px; }
+.goods { background: #0f253a; color: white; display: block; margin-top: 10px; }
 
 footer { text-align: center; padding: 40px; font-size: 0.75rem; color: #aaa; }
