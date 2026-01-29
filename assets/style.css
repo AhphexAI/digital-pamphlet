@@ -5,34 +5,24 @@
   padding: 0;
 }
 
-html, body {
+body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background-color: #fdfdfd;
-  color: #000;
-  height: 100%;
-  line-height: 1.6;
-}
-
-/* ===== Swiper 슬라이드 ===== */
-.swiper {
-  width: 100%;
-  height: 100vh;
-}
-
-.swiper-slide {
-  overflow-y: auto;
+  background-color: #ffffff;
+  color: rgb(46, 46, 46);
+  line-height: 1.7;
   padding: 24px;
+  max-width: 480px;
+  margin: 0 auto;
+
+  /* 페이지 페이드 인 */
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
 }
 
-/* ===== 헤더 / 히어로 이미지 ===== */
-header {
-  text-align: center;
-  margin-bottom: 16px;
-}
-
-.hero-img {
-  width: 100%;
-  border-radius: 12px;
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
 /* ===== 타이포그래피 ===== */
@@ -43,7 +33,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 8px;
   text-align: center;
@@ -51,87 +41,78 @@ h2 {
 
 p, li {
   font-size: 0.95rem;
-  margin-bottom: 8px;
+  color: #000000;
+}
+
+/* ===== 헤더 / 히어로 이미지 ===== */
+header {
+  text-align: center;
+}
+
+.hero-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
 }
 
 /* ===== 섹션 ===== */
 section {
-  margin: 24px 0;
+  margin: 40px 0;
+}
+
+section h2 {
+  text-align: center;
+  line-height: 1.6;
 }
 
 #artists {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 50vh;
+    display: flex;            /* flex 사용 */
+    flex-direction: column;   /* 세로로 쌓기 */
+    justify-content: center;  /* 가로 중앙 */
+    align-items: center;      /* 세로 중앙 */
+    text-align: center;       /* 텍스트 가운데 */
+    min-height: 60vh;         /* 섹션 높이 */
 }
 
 #artists ul {
-  list-style: none;
-  padding: 0;
-  width: 100%;
+    list-style: none;         /* 기본 점 제거 */
+    padding: 0;               /* 여백 제거 */
+    width: 100%;
 }
 
 #artists li {
-  margin: 5px 0;
+    margin: 5px 0;            /* 항목 간 간격 */
 }
 
-/* ===== 버튼 / 링크 ===== */
-a, .card-btn {
-  display: block;
-  margin-top: 16px;
-  padding: 12px;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.15);
-  color: #000;
-  text-decoration: none;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  font-weight: 600;
-  transition: background 0.3s, transform 0.2s;
-}
 
-a:hover, .card-btn:hover {
-  background: rgba(0,0,0,0.25);
-  transform: translateY(-2px);
-}
 
-/* ===== 리스트 스타일 ===== */
+/* ===== 리스트 ===== */
 ul {
   list-style: none;
   padding-left: 0;
 }
 
 li {
-  padding: 4px 0;
+  padding: 6px 0;
 }
 
-/* ===== Swiper 버튼 커스터마이징 ===== */
-.swiper-button-next,
-.swiper-button-prev {
-  color: rgba(0,0,0,0.7);
-  background: rgba(255,255,255,0.3);
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+/* ===== 버튼 / 링크 ===== */
+a {
+  display: block;
+  margin-top: 32px;
+  padding: 12px;
+  text-align: center;
+  background-color: #2f2f2f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  background: rgba(255,255,255,0.5);
-}
-
-/* ===== 페이지 인디케이터 ===== */
-.swiper-pagination-bullet {
-  background: rgba(0,0,0,0.3);
-  opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-  background: rgba(0,0,0,0.7);
+a:hover {
+  background-color: #424242;
+  transform: translateY(-1px);
 }
 
 /* ===== 보조 텍스트 ===== */
@@ -139,9 +120,17 @@ strong {
   font-weight: 600;
 }
 
-footer {
+/* ===== 홈으로 돌아가기 링크 ===== */
+.back-home {
   margin-top: 48px;
-  font-size: 0.75rem;
+  background: none;
+  color: #666;
+  font-size: 0.85rem;
+}
+
+footer {
+  margin-top: 80px;
+  font-size: 0.7rem;
   color: #aaa;
   text-align: center;
 }
