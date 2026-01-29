@@ -315,27 +315,28 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* "9기 운영진 기획" 문구 */
+/* 9기 운영진 제작 문구: 가장 가늘고 부드러운 회색 */
 .organized-by {
-    font-size: 0.75rem;
-    color: #888; /* 눈에 너무 띄지 않는 차분한 회색 */
-    margin-bottom: 8px;
-    font-weight: 500;
+    font-size: 0.72rem;
+    color: #888; 
+    font-weight: 300; 
+    letter-spacing: 0.3px;
+    margin-bottom: 6px;
 }
 
-/* 저작권 표시 */
+/* 저작권 메인 문구: 흰색으로 강조하되 너무 두껍지 않게 */
 .copyright {
     font-size: 0.75rem;
-    font-weight: 600;
     color: #fff;
+    font-weight: 500; /* 너무 굵으면 촌스럽고, 너무 가늘면 안 보여서 500이 적당함 */
     margin-bottom: 4px;
 }
 
-/* All Rights Reserved */
+/* All Rights Reserved: 가장 작고 어두운 회색, 자간을 넓혀 고급스럽게 */
 .reserved {
-    font-size: 0.65rem;
+    font-size: 0.62rem;
     color: #555;
-    letter-spacing: 2px;
+    font-weight: 400;
+    letter-spacing: 1.5px; /* 자간을 넓히면 가늘어도 고급스러워 보임 */
     text-transform: uppercase;
-    margin: 0;
 }
