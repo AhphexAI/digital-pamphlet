@@ -161,12 +161,12 @@
     </div>
 
     <script>
-        function openModal() {
-            // 모바일에서 더 확실히 보이도록 flex로 설정
-            document.getElementById("floorModal").style.display = "flex";
-        }
-        function closeModal() {
-            document.getElementById("floorModal").style.display = "none";
-        }
-    </script>
+    function openModal() {
+        // display를 flex로 설정해야 중앙 정렬이 먹힙니다.
+        document.getElementById("floorModal").style.display = "flex";
+    }
+    function closeModal() {
+        document.getElementById("floorModal").style.display = "none";
+    }
+</script>
 </html>
