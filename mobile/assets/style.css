@@ -343,16 +343,7 @@ body {
     font-weight: 300;
 }
 
-.close-btn {
-    position: absolute;
-    top: 20px;
-    right: 25px;
-    color: #fff;
-    font-size: 35px;
-    font-weight: bold;
-    cursor: pointer;
-}
-/* 여기까지 교체 */
+
 
 .close-btn {
     position: fixed;
