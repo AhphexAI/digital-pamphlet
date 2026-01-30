@@ -98,7 +98,7 @@
                 <strong>치밀하게 계산되지 않은 순간 속, 가장 영화적인 장면들을 마주해 보자.</strong>
 
                 <div class="artist-list-inline">
-                    <span class="artist-label">참여 작가:</span> 9기 부원 전체 참여
+                    9기 전시 참여 부원 전체 
                 </div>
             </div>
         </details>
@@ -152,12 +152,21 @@
 
     </div>
 </footer>
+    </div>
+
+    <div id="floorModal" class="modal" onclick="closeModal()">
+        <span class="close-btn">&times;</span>
+        <img id="modalImg" class="modal-content" src="assets/images/floorplan.png" alt="전시장 도면">
+        <div id="caption">터치하면 닫힙니다.</div>
+    </div>
 
     <script>
-        function openModal() { document.getElementById("floorModal").style.display = "block"; }
-        function closeModal() { document.getElementById("floorModal").style.display = "none"; }
+        function openModal() {
+            // 모바일에서 더 확실히 보이도록 flex로 설정
+            document.getElementById("floorModal").style.display = "flex";
+        }
+        function closeModal() {
+            document.getElementById("floorModal").style.display = "none";
+        }
     </script>
-</body>
-</html>
-</body>
 </html>

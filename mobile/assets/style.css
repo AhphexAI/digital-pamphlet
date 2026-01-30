@@ -178,13 +178,15 @@ body {
 
 .artist-list-inline {
     margin-top: 20px;
-    padding: 12px 15px;
+    padding: 15px;
     background: #f8f9fa;
     border-radius: 8px;
-    font-size: 0.82rem;
-    color: #333;
-    font-weight: 500;
-    line-height: 1.6;
+    font-size: 0.8rem;
+    color: #444;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    text-align: center;
 }
 
 /* 6. 도면 및 위치 섹션 */
@@ -210,19 +212,29 @@ body {
     margin-bottom: 15px;
 }
 
+/* 6. 도면 및 위치 섹션 - 여기부터 교체 */
 .btn-open-floor {
     width: 100%;
     padding: 16px;
     border: none;
     border-radius: 12px;
     background: #222;
-    color: #fff;
-    font-weight: 500;
-    font-size: 0.88rem;
-    letter-spacing: -0.3px; /* 가독성을 위해 자간 살짝 조절 */
+    color: #fff !important;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: -0.3px;
     cursor: pointer;
-    transition: background 0.2s; /* 클릭 시 부드러운 반응 */
+    position: relative;
+    z-index: 5;
+    transition: background 0.2s;
+    -webkit-appearance: none;
 }
+
+.btn-open-floor:active {
+    background: #444;
+    transform: scale(0.98);
+}
+/* 여기까지 교체 */
 
 .btn-group {
     display: flex;
@@ -297,24 +309,25 @@ body {
     opacity: 0.5;
 }
 
-/* 8. 도면 모달 */
+/* 8. 도면 모달 - 여기부터 교체 */
 .modal {
     display: none;
     position: fixed;
-    z-index: 9999;
+    z-index: 10000;
     left: 0; top: 0; width: 100%; height: 100%;
     background: rgba(0,0,0,0.95);
+    align-items: center;
+    justify-content: center;
 }
 
 .modal-content {
-    margin: auto;
     display: block;
-    width: 100%;
+    width: 90%;
+    max-width: 420px;
     height: auto;
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
 }
+/* 여기까지 교체 */
 
 .close-btn {
     position: fixed;
