@@ -38,6 +38,7 @@ root/
 │   └── images/           # 전시 리소스 (포스터, 도면, 로고 등)
 ├── LICENSE               # 라이선스
 └── README.md             # 프로젝트 문서
+```
 
 ## Copyright
 © 2026 GNAL Photography Club. All Rights Reserved.
