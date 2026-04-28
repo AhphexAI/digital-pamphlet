@@ -5,7 +5,7 @@
 
 ## Live Demo
 - URL: https://Ahhyeon430.github.io/digital-pamphlet
-- Short URL: bit.ly/Scene9-exhibit
+- Short URL: https://bit.ly/Scene9_Exhibit
 
 ---
 
