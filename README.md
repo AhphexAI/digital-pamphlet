@@ -4,7 +4,7 @@
 대학연합 사진동아리 ‘그날(GNAL)’의 아홉 번째 이야기, 첫 번째 공식 전시회인 [Scene #9: 그날의 장면들]을 위한 공식 모바일 리플렛 웹사이트입니다.
 
 ## Live Demo
-- URL: https://AhphexAI.github.io/digital-pamphlet
+- URL: https://Ahhyeon430.github.io/digital-pamphlet
 - Short URL: bit.ly/Scene9-exhibit
 
 ---
